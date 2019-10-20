@@ -1,0 +1,8 @@
+config:
+    name: /api/get_event_list/
+
+testcases:
+    create eid:
+        testcase: testdata.yaml
+        parameters:
+            eid: ${P(eid.csv)}

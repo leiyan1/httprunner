@@ -1,0 +1,20 @@
+- config:
+
+    name: test api
+    request:
+
+    base_url: http://127.0.0.1:8080/api
+
+
+- test:
+    name: test api
+    request:
+
+        url: /get_event_list
+        method: GET
+
+        params:
+            eid: 2
+    validate:
+        - eq: [status_code, 200]
+        - eq: [content.message, "success"]

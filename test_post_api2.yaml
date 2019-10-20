@@ -1,0 +1,19 @@
+- config:
+
+    name: test api
+    request:
+
+    base_url: http://127.0.0.1:8080/api
+
+
+- test:
+    name: test api one
+    request:
+
+        url: /add_event
+        method: POST
+        params:
+            eid: 1
+            realname: yanlei
+            phone: 13333333333
+            email: yy@cc.vv

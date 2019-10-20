@@ -1,0 +1,14 @@
+- config:
+    name: test api
+    request:
+    base_url: http://127.0.0.1:8080/api
+    parameters:
+        - eid: ${P(eid.csv)}
+
+- test:
+    name: test api100 two
+    request:
+        url: /get_event_list
+        method: GET
+        params:
+            eid: $eid

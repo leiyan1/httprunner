@@ -1,0 +1,15 @@
+- config:
+    name: test api
+    request:
+    base_url: http://127.0.0.1:8080/api
+
+- test:
+    name: /get_event_list/eid=$eid
+    variables:
+        eid: 2
+    request:
+        url: /get_event_list/?eid=$eid
+        method: GET
+
+#       params:
+#          eid: 2
