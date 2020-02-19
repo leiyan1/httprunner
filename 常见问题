@@ -1,0 +1,6 @@
+yaml常见问题：
+1.request,name前是空格，而不是tab。
+2.:后必须接一个空格
+3.yaml valueerror:dictionary update sequence element。。。config.yaml后需要有一个空格name: frikyskice，version: 1
+4.yanml.scanner.ScannerError: while scanning for the next token found character '/t' that cannot start any token 某处空格不对
+5.YAML配置：mapping values are not allowed here,,原因是的冒号 ”:“后面没有空格
